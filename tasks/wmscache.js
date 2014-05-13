@@ -70,10 +70,6 @@ module.exports = function(grunt) {
 								grunt.log.writeln(chalk.red('>>') + ' Reset ' + chalk.cyan(filename) + ' ' + chalk.red( res.statusCode + ' ' + http.STATUS_CODES[res.statusCode] ));
 								tally.fail++;
 							}
-
-							if (total == tally.total) {
-								done();
-							}
 							callback();
 						});
 
@@ -81,14 +77,17 @@ module.exports = function(grunt) {
 						grunt.log.writeln(chalk.red('>>') + ' Reset ' + chalk.cyan(filename) + ' ' + chalk.red( 'ERROR' ));
 						tally.fail++;
 						tally.total++;
-						if (total == tally.total) {
-							done();
-						}
 					});
 
 					req.end();
 				}
-			}, function(err) {});
+			}, function(err) {
+				grunt.log.writeln(chalk.green('>>') + ' ' + tally.success + ' Files were reset ');
+				if (tally.fail) {
+					grunt.log.writeln(chalk.red('>>') + ' ' + tally.fail + ' Files caused an errors ');
+				}
+				done();
+			});
 		});
 
 		if (tally.files) {
