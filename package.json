@@ -1,5 +1,5 @@
 {
-  "name": "grunt-clearcache",
+  "name": "grunt-requestfiles",
   "description": "Clear file cache by http requests.",
   "version": "0.0.1",
   "private": true,
