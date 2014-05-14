@@ -1,8 +1,8 @@
 /*
- * grunt-hi-wmscache
+ * grunt-requestfiles
  * https://github.com/hi
  *
- * Copyright (c) 2013 ponyowa@163.com
+ * Copyright (c) 2014 Hello Innovation
  * Licensed under the MIT license.
  */
 

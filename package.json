@@ -1,25 +1,24 @@
 {
   "name": "grunt-clearcache",
-  "description": "Clear wms file cache by http requests.",
+  "description": "Clear file cache by http requests.",
   "version": "0.0.1",
   "private": true,
-  "homepage": "https://github.com/hi/grunt-wmscache",
+  "homepage": "https://github.com/hi/grunt-requestfiles",
   "author": {
-    "name": "Herk Lee",
-    "email": "heke.job@gmail.com",
-    "url": "http://www.herk.me/"
+    "name": "Hello Innovation",
+    "url": "http://www.helloinnovation.com/"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/hi/grunt-wmscache.git"
+    "url": "https://github.com/hi/grunt-requestfiles.git"
   },
   "bugs": {
-    "url": "https://github.com/hi/grunt-wmscache/issues"
+    "url": "https://github.com/hi/grunt-requestfiles/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/hi/grunt-wmscache/blob/master/LICENSE-MIT"
+      "url": "https://github.com/hi/grunt-requestfiles/blob/master/LICENSE-MIT"
     }
   ],
   "main": "Gruntfile.js",
@@ -33,6 +32,7 @@
     "grunt-contrib-jshint": "~0.6.0",
     "grunt-contrib-clean": "~0.4.0",
     "grunt-contrib-nodeunit": "~0.2.0",
+    "chalk": "*",
     "grunt": "~0.4.1",
     "async": "~0.8.0"
   },
