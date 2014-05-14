@@ -1,8 +1,7 @@
 {
   "name": "grunt-requestfiles",
   "description": "Clear file cache by http requests.",
-  "version": "0.0.1",
-  "private": true,
+  "version": "0.0.2",
   "homepage": "https://github.com/hi/grunt-requestfiles",
   "author": {
     "name": "Hello Innovation",
