@@ -1,8 +1,7 @@
 {
-  "name": "grunt-clearcache",
+  "name": "grunt-requestfiles",
   "description": "Clear file cache by http requests.",
-  "version": "0.0.1",
-  "private": true,
+  "version": "0.0.2",
   "homepage": "https://github.com/hi/grunt-requestfiles",
   "author": {
     "name": "Hello Innovation",
@@ -28,14 +27,6 @@
   "scripts": {
     "test": "grunt test"
   },
-  "devDependencies": {
-    "grunt-contrib-jshint": "~0.6.0",
-    "grunt-contrib-clean": "~0.4.0",
-    "grunt-contrib-nodeunit": "~0.2.0",
-    "chalk": "*",
-    "grunt": "~0.4.1",
-    "async": "~0.8.0"
-  },
   "peerDependencies": {
     "grunt": "~0.4.1"
   },
@@ -43,6 +34,12 @@
     "gruntplugin"
   ],
   "dependencies": {
-    "grunt": "~0.4.1"
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "chalk": "*",
+    "grunt": "~0.4.1",
+    "async": "~0.8.0"
   }
 }
